@@ -49,7 +49,7 @@ def main():
                 if shot.collide(asteroid):
                     #kill is a feature built into pygame. It will stop drawing.
                     shot.kill()
-                    asteroid.kill()
+                    asteroid.split()
 
             if asteroid.collide(player):
                 print("Game Over!")
